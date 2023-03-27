@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: -270px;
+}
+.wrapper .static-txt{
+    color: black;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+.wrapper .dynamic-txt{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    font-family: 'Dancing Script', cursive;
+}
+.dynamic-txt li{
+    list-style: none;
+    color: green;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide{
+    100% {
+        top: -360px;
+    }
+}
+.dynamic-txt li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+.dynamic-txt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-left: 2px solid #9970fd;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing{
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.saifi{
+    text-align: center;
+    margin-top: 80px;
+    justify-content: center;
+    top: auto;
+}
+.saifi h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 10vh;
+}
+.saifi h1 span{
+    color: green;
+}
+.saifi-image{
+    margin-top: -300px;
+}
+.saifi-image img{
+    width: 40%;
+    height: 100vh;
+    margin-top: -900px;
+}
+.row h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+.myself h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.myself h2 span{
+    color: green;
+}

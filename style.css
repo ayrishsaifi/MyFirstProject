@@ -1,0 +1,35 @@
+*{ padding: 0; margin: 0; box-sizing: border-box;}
+body{
+    overflow-x: hidden;
+}
+h1,h2{
+    font-family: 'Dancing Script', cursive;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 80vh;
+}
+#pics{
+    width: 100%;
+    height: 90vh;
+}
+#ay img{
+    min-width: 50%;
+    max-height: 200px;
+}
+#ab img{
+    min-width: 50%;
+    max-height: 200px;
+}
+#pq img{
+    min-width: 50%;
+    max-height: 200px;
+}
+#nan img{
+    width: 100%;
+    height: 90vh;
+}
+.nadeem-text img{
+    width: 40%;
+    height: 100vh;
+}
